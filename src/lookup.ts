@@ -59,4 +59,18 @@ export class Lookup {
   public get alpha3 () : ReadonlyArray< string > {
     return this.keys.alpha3 ??= [ ...this.index( 'alpha3' ).keys() ];
   }
+
+  /**
+   * Returns all available ISO 3166-1 numeric codes.
+   */
+  public get numeric () : ReadonlyArray< string > {
+    return this.keys.numeric ??= [ ...this.index( 'numeric' ).keys() ];
+  }
+
+  /**
+   * Returns all available country names.
+   */
+  public get names () : ReadonlyArray< string > {
+    return this.keys.name ??= [ ...this.index( 'name' ).keys() ];
+  }
 }
