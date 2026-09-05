@@ -41,3 +41,18 @@ export const byName = lookup.byName.bind( lookup );
  * Filters countries using the specified predicate.
  */
 export const filter = lookup.filter.bind( lookup );
+
+/**
+ * Returns the preferred display name of a country.
+ */
+export const displayName = Lookup.displayName;
+
+/**
+ * Returns the preferred official name of a country.
+ */
+export const officialName = Lookup.officialName;
+
+/**
+ * Returns the preferred native name of a country.
+ */
+export const nativeName = Lookup.nativeName;
