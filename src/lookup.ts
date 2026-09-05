@@ -138,3 +138,8 @@ export class Lookup {
     return this.index( 'name' ).get( name );
   }
 }
+
+/**
+ * Shared lookup instance for the built-in country dataset.
+ */
+export const lookup = new Lookup( countries );
