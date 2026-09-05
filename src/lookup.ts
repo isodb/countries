@@ -73,4 +73,14 @@ export class Lookup {
   public get names () : ReadonlyArray< string > {
     return this.keys.name ??= [ ...this.index( 'name' ).keys() ];
   }
+
+  /**
+   * Filters countries using the specified predicate.
+   * 
+   * @param predicate Filter predicate.
+   * @returns Matching countries.
+   */
+  public filter ( predicate: ( country: Country ) => boolean ) : ReadonlyArray< Country > {
+    return this.countries.filter( predicate );
+  }
 }
