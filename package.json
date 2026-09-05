@@ -1,0 +1,12 @@
+{
+  "name": "@isodb/countries",
+  "description": "Typed reference data for countries",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Paul Köhler (komed3)",
+    "email": "webmaster@komed3.de",
+    "url": "https://komed3.de"
+  },
+  "homepage": "https://github.com/isodb"
+}
