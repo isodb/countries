@@ -13,6 +13,7 @@
 
 import { countries as data } from './data/countries';
 import { Lookup, lookup } from './lookup';
+import type { Country } from './types';
 
 export type * from './types';
 export { data, lookup };
@@ -61,7 +62,7 @@ export const nativeName = Lookup.nativeName;
  * Complete package API.
  */
 export const countries = {
-  countries: data, lookup,
+  countries: data as ReadonlyArray< Country >, lookup,
   byAlpha2, byAlpha3, byNumeric, byName, filter,
   displayName, officialName, nativeName
 };
