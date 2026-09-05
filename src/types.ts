@@ -13,23 +13,46 @@ export interface Country {
   numeric: string;
 
   name: string;
-  officialName: string;
-  shortName: string;
+  officialName?: string;
+  shortName?: string;
+  nativeName?: string;
+  nativeOfficialName?: string;
 
   continent: Continent;
-  capital: string;
+  region?: string;
+  subregion?: string;
+  capital?: string;
 
-  tel: string;
-  mobile: string;
-  tld: string;
+  tel?: string;
+  mobile?: string;
+  tld?: string;
+  languages?: string[];
+  languageCodes?: string[];
+  currencies?: string[];
+  currencyNames?: string[];
+  currencyNumericCodes?: string[];
+  geonameId?: string;
 
-  fips: string;
-  nato: string;
-  itu: string;
-  uicNumeric: string;
-  uicAlpha: string;
+  fips?: string;
+  nato?: string;
+  itu?: string;
+  ioc?: string;
+  wmo?: string;
+  fifa?: string;
+  marc?: string;
+  ds?: string;
+  m49?: string;
+  gaul?: string;
+  edgar?: string;
+  wikidata?: string;
+  uicNumeric?: string;
+  uicAlpha?: string;
 
-  vehicleCode: string;
-  aircraftPrefix: string;
-  sailCode: string;
+  vehicleCode?: string;
+  aircraftPrefix?: string;
+  sailCode?: string;
+
+  natoMember?: boolean;
+  independent?: boolean;
+  unMember?: boolean;
 }
