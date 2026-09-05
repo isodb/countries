@@ -25,3 +25,32 @@ Part of the **[isodb](https://github.com/isodb)** project, providing typed refer
 ```bash
 npm install @isodb/countries
 ```
+
+## Usage
+
+### Import the dataset
+
+```ts
+import { data } from '@isodb/countries';
+console.log( data.length );
+```
+
+### Lookup by ISO 3166-1 alpha-2 code
+
+Finds a country by its two-letter ISO 3166-1 alpha-2 code:
+
+```ts
+import { byAlpha2 } from '@isodb/countries';
+
+const germany = byAlpha2( 'DE' );
+console.log( germany?.capital );
+```
+
+### Lookup by ISO 3166-1 alpha-3 code
+
+Finds a country by its three-letter ISO 3166-1 alpha-3 code:
+
+```ts
+import { byAlpha3 } from '@isodb/countries';
+const germany = byAlpha3( 'DEU' );
+```
