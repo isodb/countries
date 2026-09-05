@@ -17,5 +17,18 @@
     "dataset",
     "iso",
     "typescript"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isodb/countries.git"
+  },
+  "bugs": {
+    "url": "https://github.com/isodb/countries/issues"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "type": "module"
 }
