@@ -83,4 +83,15 @@ export class Lookup {
   public filter ( predicate: ( country: Country ) => boolean ) : ReadonlyArray< Country > {
     return this.countries.filter( predicate );
   }
+
+  /**
+   * Finds a country by the specified lookup field.
+   * 
+   * @param by Lookup field (alpha2, alpha3, numeric, name).
+   * @param key Lookup value.
+   * @returns The matching country, or `undefined` if not found.
+   */
+  public find < K extends keyof LookupIndexes > ( by: K, key: string ) : Country | undefined {
+    return this.index( by ).get( key );
+  }
 }
