@@ -174,3 +174,8 @@ Each entry contains the following information:
 | `unMember`             | Whether the country is a United Nations member state |
 
 Optional properties are omitted when no value is available in the source data.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.  
+© Copyright 2026 Paul Köhler (komed3).
