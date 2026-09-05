@@ -152,6 +152,19 @@ export class Lookup {
   public static displayName ( country: Country ) : string {
     return country.shortName ?? country.name;
   }
+
+  /**
+   * Returns the preferred official name of a country.
+   * 
+   * Uses the official name when available and falls back
+   * to the country's name.
+   * 
+   * @param country Country data.
+   * @returns Preferred official name.
+   */
+  public officialName ( country: Country ) : string {
+    return country.officialName ?? country.name;
+  }
 }
 
 /**
