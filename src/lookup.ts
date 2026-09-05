@@ -137,6 +137,21 @@ export class Lookup {
   public byName ( name: string ) : Country | undefined {
     return this.index( 'name' ).get( name );
   }
+
+  // --- static methods ---
+
+  /**
+   * Returns the preferred display name of a country.
+   * 
+   * Uses the short name when available and falls back
+   * to the country's name.
+   * 
+   * @param country Country data.
+   * @returns Preferred display name.
+   */
+  public static displayName ( country: Country ) : string {
+    return country.shortName ?? country.name;
+  }
 }
 
 /**
