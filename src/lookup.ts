@@ -124,4 +124,17 @@ export class Lookup {
   public byNumeric ( numeric: string ) : Country | undefined {
     return this.index( 'numeric' ).get( numeric );
   }
+
+  /**
+   * Finds a country by any known name.
+   * 
+   * Matches the country's name, official name, short name,
+   * native name, or native official name.
+   * 
+   * @param name Country name.
+   * @returns The matching country, or `undefined` if not found.
+   */
+  public byName ( name: string ) : Country | undefined {
+    return this.index( 'name' ).get( name );
+  }
 }
