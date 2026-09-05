@@ -45,4 +45,11 @@ export class Lookup {
       ...( country.nativeOfficialName ? [ [ country.nativeOfficialName, country ] as Tuple ] : [] )
     ] ) : this.countries.map( country => [ country[ key ], country ] as Tuple ) );
   }
+
+  /**
+   * Returns all available ISO 3166-1 alpha-2 codes.
+   */
+  public get alpha2 () : ReadonlyArray< string > {
+    return this.keys.alpha2 ??= [ ...this.index( 'alpha2' ).keys() ];
+  }
 }
