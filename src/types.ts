@@ -14,15 +14,21 @@ export type TelephoneCode = string;
 export interface Country {
   alpha2: Code;
   alpha3: Code;
+  numeric: Code;
   name: Name;
   officialName: Name;
   shortName: Name;
   continent: Continent;
-  telephoneCode: TelephoneCode;
+  tel: TelephoneCode;
+  mobile: Code;
+  tld: Code;
   fifa: Code;
   fips: Code;
+  nato: Code;
+  itu: Code;
   uicNumeric: Code;
   uicAlpha: Code;
+  vehicleCode: Code;
   aircraftPrefix: Code;
   sailCode: Code;
 }
