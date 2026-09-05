@@ -23,14 +23,13 @@ export interface Country {
   mobile: string;
   tld: string;
 
-  fifa: string;
   fips: string;
   nato: string;
   itu: string;
   uicNumeric: string;
   uicAlpha: string;
 
-  vehiclestring: string;
+  vehicleCode: string;
   aircraftPrefix: string;
-  sailstring: string;
+  sailCode: string;
 }
