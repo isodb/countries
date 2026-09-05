@@ -54,3 +54,47 @@ Finds a country by its three-letter ISO 3166-1 alpha-3 code:
 import { byAlpha3 } from '@isodb/countries';
 const germany = byAlpha3( 'DEU' );
 ```
+
+### Lookup by ISO 3166-1 numeric code
+
+Finds a country by its three-digit ISO 3166-1 numeric code:
+
+```ts
+import { byNumeric } from '@isodb/countries';
+const germany = byNumeric( '276' );
+```
+
+### Lookup by name
+
+Finds a country by any known country name, including its primary, official, short, native, or native official name:
+
+```ts
+import { byName } from '@isodb/countries';
+const germany = byName( 'Germany' );
+const deutschland = byName( 'Deutschland' );
+```
+
+### Filter the dataset
+
+Filters countries using the specified predicate:
+
+```ts
+import { filter } from '@isodb/countries';
+const europeanCountries = filter( country => country.continent === 'Europe' );
+```
+
+### Using the lookup service
+
+```ts
+import { lookup } from '@isodb/countries';
+
+lookup.byAlpha2( 'DE' );
+lookup.byAlpha3( 'DEU' );
+lookup.byNumeric( '276' );
+lookup.byName( 'Germany' );
+
+lookup.alpha2;
+lookup.alpha3;
+lookup.numeric;
+lookup.names;
+```
