@@ -1,6 +1,6 @@
 {
   "name": "@isodb/countries",
-  "description": "Typed reference data for countries",
+  "description": "Typed reference data for countries and their common geographic and international identifiers",
   "version": "0.1.0",
   "license": "MIT",
   "author": {
