@@ -98,3 +98,29 @@ lookup.alpha3;
 lookup.numeric;
 lookup.names;
 ```
+
+### Display names
+
+The package provides helpers for selecting preferred country names:
+
+```ts
+import { byAlpha2, displayName, officialName, nativeName } from '@isodb/countries';
+
+const germany = byAlpha2( 'DE' );
+
+displayName( germany! );
+officialName( germany! );
+nativeName( germany! );
+```
+
+The helpers use sensible fallbacks when a preferred name is not available.
+
+### Default export
+
+```ts
+import countries from '@isodb/countries';
+
+countries.byAlpha2( 'US' );
+countries.countries;
+countries.displayName( countries.byAlpha2( 'DE' )! );
+```
