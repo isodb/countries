@@ -7,28 +7,30 @@ export type Continent =
   | 'Oceania'
   | 'South America';
 
-export type Code = string;
-export type Name = string;
-export type TelephoneCode = string;
-
 export interface Country {
-  alpha2: Code;
-  alpha3: Code;
-  numeric: Code;
-  name: Name;
-  officialName: Name;
-  shortName: Name;
+  alpha2: string;
+  alpha3: string;
+  numeric: string;
+
+  name: string;
+  officialName: string;
+  shortName: string;
+
   continent: Continent;
-  tel: TelephoneCode;
-  mobile: Code;
-  tld: Code;
-  fifa: Code;
-  fips: Code;
-  nato: Code;
-  itu: Code;
-  uicNumeric: Code;
-  uicAlpha: Code;
-  vehicleCode: Code;
-  aircraftPrefix: Code;
-  sailCode: Code;
+  capital: string;
+
+  tel: string;
+  mobile: string;
+  tld: string;
+
+  fifa: string;
+  fips: string;
+  nato: string;
+  itu: string;
+  uicNumeric: string;
+  uicAlpha: string;
+
+  vehiclestring: string;
+  aircraftPrefix: string;
+  sailstring: string;
 }
