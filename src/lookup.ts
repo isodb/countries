@@ -162,7 +162,7 @@ export class Lookup {
    * @param country Country data.
    * @returns Preferred official name.
    */
-  public officialName ( country: Country ) : string {
+  public static officialName ( country: Country ) : string {
     return country.officialName ?? country.name;
   }
 
@@ -175,7 +175,7 @@ export class Lookup {
    * @param country Country data.
    * @returns Preferred native name.
    */
-  public nativeName ( country: Country ) : string {
+  public static nativeName ( country: Country ) : string {
     return country.nativeName ?? Lookup.displayName( country );
   }
 }
