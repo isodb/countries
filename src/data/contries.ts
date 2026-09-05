@@ -11,7 +11,7 @@ export const countries = [ {
   capital: 'Berlin',
   tel: '49',
   mobile: '262',
-  tld: '.de',
+  tld: 'de',
   fips: 'GM',
   nato: 'DE',
   itu: 'D',
