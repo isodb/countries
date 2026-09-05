@@ -108,9 +108,9 @@ import { byAlpha2, displayName, officialName, nativeName } from '@isodb/countrie
 
 const germany = byAlpha2( 'DE' );
 
-displayName( germany! );
-officialName( germany! );
-nativeName( germany! );
+displayName( germany );
+officialName( germany );
+nativeName( germany );
 ```
 
 The helpers use sensible fallbacks when a preferred name is not available.
