@@ -9,7 +9,7 @@ export const countries = [ {
   shortName: 'Germany',
   continent: 'Europe',
   capital: 'Berlin',
-  tel: '+49',
+  tel: '49',
   mobile: '262',
   tld: '.de',
   fips: 'GM',
