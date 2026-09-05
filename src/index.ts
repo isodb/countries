@@ -31,3 +31,13 @@ export const byAlpha3 = lookup.byAlpha3.bind( lookup );
  * Finds a country by its ISO 3166-1 numeric code.
  */
 export const byNumeric = lookup.byNumeric.bind( lookup );
+
+/**
+ * Finds a country by any known country name.
+ */
+export const byName = lookup.byName.bind( lookup );
+
+/**
+ * Filters countries using the specified predicate.
+ */
+export const filter = lookup.filter.bind( lookup );
