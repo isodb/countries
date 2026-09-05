@@ -18,3 +18,11 @@ type LookupKeys = {
   numeric?: ReadonlyArray< string >;
   name?: ReadonlyArray< string >;
 };
+
+/**
+ * Provides lookup and filtering utilities for countries.
+ * 
+ * Lookup indexes are created lazily on first access and
+ * cached for subsequent queries.
+ */
+export class Lookup {}
