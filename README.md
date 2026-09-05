@@ -124,3 +124,53 @@ countries.byAlpha2( 'US' );
 countries.countries;
 countries.displayName( countries.byAlpha2( 'DE' )! );
 ```
+
+## Dataset
+
+Each entry contains the following information:
+
+| Property               | Description                                          |
+|------------------------|------------------------------------------------------|
+| `alpha2`               | ISO 3166-1 alpha-2 country code                      |
+| `alpha3`               | ISO 3166-1 alpha-3 country code                      |
+| `numeric`              | ISO 3166-1 numeric country code                      |
+| `name`                 | Primary country name                                 |
+| `officialName`         | Official country name                                |
+| `shortName`            | Common or short country name                         |
+| `nativeName`           | Native country name                                  |
+| `nativeOfficialName`   | Native official country name                         |
+| `continent`            | Continent                                            |
+| `region`               | Geographic region                                    |
+| `subregion`            | Geographic subregion                                 |
+| `capital`              | Capital city                                         |
+| `tel`                  | International telephone calling code                 |
+| `mobile`               | International mobile telephone calling code          |
+| `tld`                  | Country-code top-level domain                        |
+| `languages`            | Languages spoken in the country                      |
+| `languageCodes`        | Language codes                                       |
+| `currencies`           | ISO 4217 currency codes                              |
+| `currencyNames`        | Currency names                                       |
+| `currencyNumericCodes` | ISO 4217 numeric currency codes                      |
+| `geonameId`            | GeoNames identifier                                  |
+| `fips`                 | FIPS 10-4 country code                               |
+| `nato`                 | NATO country code                                    |
+| `itu`                  | ITU country code                                     |
+| `ioc`                  | IOC country code                                     |
+| `wmo`                  | WMO country code                                     |
+| `fifa`                 | FIFA country code                                    |
+| `marc`                 | MARC country code                                    |
+| `ds`                   | U.S. Department of State country code                |
+| `m49`                  | UN M49 country code                                  |
+| `gaul`                 | GAUL country code                                    |
+| `edgar`                | SEC EDGAR country code                               |
+| `wikidata`             | Wikidata identifier                                  |
+| `uicNumeric`           | UIC numeric country code                             |
+| `uicAlpha`             | UIC alpha country code                               |
+| `vehicleCode`          | International vehicle registration code              |
+| `aircraftPrefix`       | Aircraft registration prefix                         |
+| `sailCode`             | International sailing code                           |
+| `natoMember`           | Whether the country is a NATO member                 |
+| `independent`          | Whether the country is an independent state          |
+| `unMember`             | Whether the country is a United Nations member state |
+
+Optional properties are omitted when no value is available in the source data.
