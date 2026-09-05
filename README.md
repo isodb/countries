@@ -19,3 +19,9 @@ Part of the **[isodb](https://github.com/isodb)** project, providing typed refer
 - Fully typed with TypeScript
 - Lazy lookup indexes
 - Tree-shakeable API
+
+## Installation
+
+```bash
+npm install @isodb/countries
+```
