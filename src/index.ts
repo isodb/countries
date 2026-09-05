@@ -56,3 +56,13 @@ export const officialName = Lookup.officialName;
  * Returns the preferred native name of a country.
  */
 export const nativeName = Lookup.nativeName;
+
+/**
+ * Complete package API.
+ */
+export const countries = {
+  data, lookup, byAlpha2, byAlpha3, byNumeric, byName, filter,
+  displayName, officialName, nativeName
+};
+
+export default countries;
