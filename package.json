@@ -30,5 +30,15 @@
     "README.md",
     "LICENSE"
   ],
-  "type": "module"
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
+  "main": "./dist/index.cjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  }
 }
