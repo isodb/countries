@@ -52,4 +52,11 @@ export class Lookup {
   public get alpha2 () : ReadonlyArray< string > {
     return this.keys.alpha2 ??= [ ...this.index( 'alpha2' ).keys() ];
   }
+
+  /**
+   * Returns all available ISO 3166-1 alpha-3 codes.
+   */
+  public get alpha3 () : ReadonlyArray< string > {
+    return this.keys.alpha3 ??= [ ...this.index( 'alpha3' ).keys() ];
+  }
 }
