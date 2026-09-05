@@ -165,6 +165,19 @@ export class Lookup {
   public officialName ( country: Country ) : string {
     return country.officialName ?? country.name;
   }
+
+  /**
+   * Returns the preferred native name of a country.
+   * 
+   * Uses the native name when available and falls back
+   * to the preferred display name.
+   * 
+   * @param country Country data.
+   * @returns Preferred native name.
+   */
+  public nativeName ( country: Country ) : string {
+    return country.nativeName ?? Lookup.displayName( country );
+  }
 }
 
 /**
