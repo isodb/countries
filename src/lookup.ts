@@ -94,4 +94,34 @@ export class Lookup {
   public find < K extends keyof LookupIndexes > ( by: K, key: string ) : Country | undefined {
     return this.index( by ).get( key );
   }
+
+  /**
+   * Finds a country by an ISO 3166-1 alpha-2 code.
+   *
+   * @param alpha2 ISO 3166-1 alpha-2 code.
+   * @returns The matching country, or `undefined` if not found.
+   */
+  public byAlpha2 ( alpha2: string ) : Country | undefined {
+    return this.index( 'alpha2' ).get( alpha2 );
+  }
+
+  /**
+   * Finds a country by an ISO 3166-1 alpha-3 code.
+   *
+   * @param alpha3 ISO 3166-1 alpha-3 code.
+   * @returns The matching country, or `undefined` if not found.
+   */
+  public byAlpha3 ( alpha3: string ) : Country | undefined {
+    return this.index( 'alpha3' ).get( alpha3 );
+  }
+
+  /**
+   * Finds a country by an ISO 3166-1 numeric code.
+   *
+   * @param numeric ISO 3166-1 numeric code.
+   * @returns The matching country, or `undefined` if not found.
+   */
+  public byNumeric ( numeric: string ) : Country | undefined {
+    return this.index( 'numeric' ).get( numeric );
+  }
 }
