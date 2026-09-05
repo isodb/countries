@@ -25,4 +25,12 @@ type LookupKeys = {
  * Lookup indexes are created lazily on first access and
  * cached for subsequent queries.
  */
-export class Lookup {}
+export class Lookup {
+  private readonly countries: ReadonlyArray< Country >;
+  private readonly indexes: LookupIndexes = {};
+  private readonly keys: LookupKeys = {};
+
+  constructor ( countries: ReadonlyArray< Country > ) {
+    this.countries = countries;
+  }
+}
