@@ -9,6 +9,7 @@ export type Continent =
 
 export type Code = string;
 export type Name = string;
+export type TelephoneCode = string;
 
 export interface Country {
   alpha2: Code;
@@ -17,4 +18,11 @@ export interface Country {
   officialName: Name;
   shortName: Name;
   continent: Continent;
+  telephoneCode: TelephoneCode;
+  fifa: Code;
+  fips: Code;
+  uicNumeric: Code;
+  uicAlpha: Code;
+  aircraftPrefix: Code;
+  sailCode: Code;
 }
