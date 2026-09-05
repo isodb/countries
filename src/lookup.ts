@@ -97,7 +97,7 @@ export class Lookup {
 
   /**
    * Finds a country by an ISO 3166-1 alpha-2 code.
-   *
+   * 
    * @param alpha2 ISO 3166-1 alpha-2 code.
    * @returns The matching country, or `undefined` if not found.
    */
@@ -107,7 +107,7 @@ export class Lookup {
 
   /**
    * Finds a country by an ISO 3166-1 alpha-3 code.
-   *
+   * 
    * @param alpha3 ISO 3166-1 alpha-3 code.
    * @returns The matching country, or `undefined` if not found.
    */
@@ -117,7 +117,7 @@ export class Lookup {
 
   /**
    * Finds a country by an ISO 3166-1 numeric code.
-   *
+   * 
    * @param numeric ISO 3166-1 numeric code.
    * @returns The matching country, or `undefined` if not found.
    */
